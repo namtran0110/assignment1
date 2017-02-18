@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Food Items</h1>
+
+<table class="table">
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Image</th>
+    <th>Price</th>
+  </tr>
+  </thead>
+
+  <tbody>
+    <% @food_items.each do |food_item| %>
+      <tr>
+        <td><%= link_to food_item.name %></td>
+        <td><%= image_tag food_item.image_url_or_default, class:"food_image" %></td>
+        <td><%= food_item.price %></td>
+        <td><%= food_item.description %></td>
+        <td><%= food_item.section %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Food Item', new_food_item_path %>
+

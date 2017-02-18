@@ -1,0 +1,11 @@
+<div class="container">
+  <h1>Thank you <%= @order.name %>, for your order</h1>
+  <div class="card card-block">
+    <p><%= @order.created_at %></p>
+    <p>You order <%= @order.quantity %> <%= @order.food_item.name %> (<%= @order.food_item.price %> vnd)</p>
+    <p>We will deliver to you at <%= @order.address %></p>
+    <p>If anything, we will you call you at <%= @order.phone %></p>
+    <p> Delivery cost: 20000 vnd</p>
+    <p>Total: <%= @order.food_item.price * @order.quantity + 20000 %> vnd</p>
+  </div>
+</div>

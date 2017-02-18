@@ -1,0 +1,26 @@
+@import 'bootstrap';
+@import url('https://fonts.googleapis.com/css?family=Trirong:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+body {
+  font-family: 'Trirong', light;
+}
+
+.food_image {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.food_image_bg {
+  max-width: 600px;
+  max-height: 600px;
+}
+
+.add_item {
+  background-color: transparent;
+  border-radius: 30px;
+  border: 1px solid #730E15;
+}
+
+.word {
+  color: #730E15;
+}
