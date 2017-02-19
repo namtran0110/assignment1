@@ -7,7 +7,7 @@ class FoodItemsController < ApplicationController
     @food_items = if search
                     FoodItem.search(search)
                   else
-                    FoodItem.all
+                    FoodItem.order('name DESC')
                   end
   end
 
