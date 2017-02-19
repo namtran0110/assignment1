@@ -6,29 +6,27 @@
 </div>
 
 <% if @current_section %>
-    <div class="card card-block">
-      <table class="table">
-        <thead>
-        <tr>
-          <th><%= link_to "Name", :sort => 'name' %></th>
-          <th>Image</th>
-          <th><%= link_to "Price", :sort => 'price' %></th>
-        </tr>
-        </thead>
-        <div class="tbody">
-          <% @current_section.food_items.each do |item| %>
-              <tr>
-                <td><%= link_to item.name, item %></td>
-                <td><%= image_tag item.image_url_or_default, class: "food_image" %></td>
-                <td><%= number_to_currency item.price %></td>
-                <td>
-                  <button class="add_item"><%= link_to "Add to order", new_food_item_order_path(food_item_id: item.id), class: 'word' %></button>
-                </td>
-              </tr>
-          <% end %>
-        </div>
-      </table>
-    </div>
+    <table class="table">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Image</th>
+        <th>Price</th>
+      </tr>
+      </thead>
+      <div class="tbody">
+        <% @current_section.food_items.each do |item| %>
+            <tr>
+              <td><%= link_to item.name, item %></td>
+              <td><%= image_tag item.image_url_or_default, class: "food_image" %></td>
+              <td><%= number_to_currency item.price %></td>
+              <td>
+                <button class="add_item"><%= link_to "Add to order", new_food_item_order_path(food_item_id: item.id), class: 'word' %></button>
+              </td>
+            </tr>
+        <% end %>
+      </div>
+    </table>
 <% else %>
     <div class="alert alert-info">Please select a section</div>
 <% end %>
