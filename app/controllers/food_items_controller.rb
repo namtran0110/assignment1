@@ -7,7 +7,7 @@ class FoodItemsController < ApplicationController
     @food_items = if search
                     FoodItem.search(search)
                   else
-                    FoodItem.order('name DESC')
+                    FoodItem.order(params[:sort])
                   end
   end
 
