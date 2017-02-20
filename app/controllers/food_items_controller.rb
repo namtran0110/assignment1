@@ -14,6 +14,7 @@ class FoodItemsController < ApplicationController
   # GET /food_items/1
   # GET /food_items/1.json
   def show
+    @food_item.increment!(:view_count)
   end
 
   # GET /food_items/new

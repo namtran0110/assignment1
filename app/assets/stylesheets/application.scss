@@ -19,12 +19,51 @@ body {
   background-color: transparent;
   border-radius: 30px;
   border: 1px solid #9CCBA4;
+  width: 150px;
+  color: #9CCBA4;
 }
 
-.word {
-  color: #9CCBA4;
+.add_item:hover {
+  background-color: #9CCBA4;
+  border-radius: 30px;
+  border: 1px solid #9CCBA4;
+  width: 150px;
+  color: white
 }
 
 .sign {
   background-color: #9CCBA4;
+}
+.background {
+  max-width: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+.description {
+  padding-top: 50px;
+}
+
+span {
+  font-style: italic;
+}
+
+.navigation {
+  background-color: #9CCBA4;
+  border: 1px solid #9CCBA4;
+  width: 150px;
+  color: white;
+}
+
+.navigation:hover {
+  background-color: white;
+  border: 1px solid white;
+  width: 150px;
+  color: #9CCBA4;
+}
+
+.introduction {
+  padding-top: 150px;
+  color: white;
 }

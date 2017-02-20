@@ -1,6 +1,10 @@
-<h2>Welcome to</h2>
-<h1>THE RESTAURANT</h1>
-<div class="jumbotron hero sign">
-  <%= link_to "Menu", menu_path, class: 'btn btn-secondary' %>
-  <%= link_to "Contact Us", contact_us_path, class: 'btn btn-secondary' %>
+<%= image_tag 'https://wdpromedia.disney.go.com/media/resorts/1/images/en/dining/ama-ama-beach-restaurant/aulani-amaama-window-dining-hero-g.jpg', class: 'background' %>
+<div class="container introduction">
+  <div class="col-lg-12  text-center">
+    <h2>Welcome to</h2>
+    <h1>THE <span>Restaurant</span></h1>
+    <%= link_to "Menu", menu_path, class: 'btn navigation' %>
+    <%= link_to "Contact Us", contact_us_path, class: 'btn navigation' %>
+  </div>
 </div>
+
