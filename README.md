@@ -10,49 +10,49 @@ URL: https://frozen-bayou-38086.herokuapp.com/
 
 ## Tech notes
 
-[x]User must be able to go two pages: Menu, and Contact Us.
+- [x] User must be able to go two pages: Menu, and Contact Us.
 
-[x]User can see the address and phone number on the contact us page.
+- [x] User can see the address and phone number on the contact us page.
 
-[x]User can see a basic google map on the Contact Us page.
+- [x] User can see a basic google map on the Contact Us page.
 
-[x]User can navigate to a menu page with four sections:
+- [x] User can navigate to a menu page with four sections:
 
-     [x]Breakfast
+     - [x] Breakfast
      
-     [x]Lunch
+     - [x] Lunch
      
-     [x]Dinner
+     - [x] Dinner
      
-     [x]Drinks
+     - [x] Drinks
      
-[x]User should see at least 5 food items in each section.
+- [x] User should see at least 5 food items in each section.
 
-[x]Each food item should have the following fields:
+- [x] Each food item should have the following fields:
 
-  [x]Name (Canh Chua)
+  - [x] Name (Canh Chua)
   
-  [x]Description (Delicious fish soup)
+  - [x] Description (Delicious fish soup)
   
-  [x]Price (VND)
+  - [x] Price (VND)
   
-  [x]Section - Breakfast, Lunch, Dinner, Drinks
+  - [x] Section - Breakfast, Lunch, Dinner, Drinks
   
-  [x]Image URL - do a google search or use LoremFlickr: http://loremflickr.com/320/240/canhchua
+  - [x] Image URL - do a google search or use LoremFlickr: http://loremflickr.com/320/240/canhchua
   
-[x]User should be able to filter by section of Breakfast, Lunch, Dinner, or Drinks and see only the relevant items.
+- [x] User should be able to filter by section of Breakfast, Lunch, Dinner, or Drinks and see only the relevant items.
 
-[x]User can sort menu items by “alphabetical”, “price low to high”, and “price high to low”.
+- [x] User can sort menu items by “alphabetical”, “price low to high”, and “price high to low”.
 
-[x]User should be able to search for a menu item and see results.
+- [x] User should be able to search for a menu item and see results.
 
-[x]Clicking on an item in the menu brings up its detail, where you see the description and a larger picture.
+- [x] Clicking on an item in the menu brings up its detail, where you see the description and a larger picture.
 
-[x]User can click “order” on a menu item to go to a “Create Order” page.
+- [x] User can click “order” on a menu item to go to a “Create Order” page.
 
-[x]User is able to fill in their name, phone number, and address.
+- [x] User is able to fill in their name, phone number, and address.
 
-[x]User is taken to a “Thank you for your order page” that lists the name of item, the total cost (delivery should cost 
+- [x] User is taken to a “Thank you for your order page” that lists the name of item, the total cost (delivery should cost 
 20,000 VND), the user’s name, the user’s address, and the time the order was created in human-readable format 
 
 (for example, Tuesday, December 1, 15:25).
